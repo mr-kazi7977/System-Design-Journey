@@ -33,6 +33,7 @@ A **Load Balancer (LB)** sits between the client and backend servers. It decides
   [Client]  --->  [Load Balancer]  --->  [Server 1]
                                     --->  [Server 2]
                                     --->  [Server 3]
+```
 
 🔥 Types of Load Balancers
 1️⃣ Layer 4 (Transport Layer) Load Balancer
