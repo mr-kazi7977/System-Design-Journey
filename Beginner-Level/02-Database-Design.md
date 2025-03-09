@@ -52,3 +52,28 @@ Indexes speed up queries by allowing faster lookups.
 📌 **Example:**  
 ```sql
 CREATE INDEX idx_name ON Users(name);
+
+
+ACID vs BASE in Simple Terms
+Think of ACID like a bank and BASE like WhatsApp messages.
+
+🔹 ACID (Used in SQL Databases – MySQL, PostgreSQL, Oracle)
+✅ Like a Bank Transaction 🏦
+
+Atomicity → "All or Nothing" → If you send ₹1000, it should fully go or not at all.
+Consistency → "Always Correct" → Your bank balance should never be wrong.
+Isolation → "No Mixing" → Your transfer should not get mixed up with someone else's.
+Durability → "Never Lost" → Even if the system crashes, your transaction is saved.
+💡 Used in: Banking, Insurance Policy Issuance, Payments
+
+🔹 BASE (Used in NoSQL Databases – MongoDB, DynamoDB, Redis)
+✅ Like WhatsApp Messages 📱
+
+Basically Available → "Always Working" → Even if some servers are slow, you can still send messages.
+Soft State → "Data Can Change" → Message status (Sent → Delivered → Read) updates over time.
+Eventual Consistency → "Will Sync Later" → If the internet is slow, messages will deliver eventually.
+💡 Used in: Social Media, POS Agent Tracking, Lead Management
+
+🚀 When to Use What?
+✔️ ACID → Use when data must always be correct & transactions must never fail (Bank, Insurance).
+✔️ BASE → Use when speed & availability are more important than instant accuracy (WhatsApp, POS tracking).
