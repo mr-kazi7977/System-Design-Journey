@@ -54,6 +54,12 @@ Indexes speed up queries by allowing faster lookups.
 CREATE INDEX idx_name ON Users(name);
 
 
+
+
+
+
+
+
 ACID vs BASE in Simple Terms
 Think of ACID like a bank and BASE like WhatsApp messages.
 
