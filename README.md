@@ -35,8 +35,8 @@ Welcome to my **System Design Learning Journey!** This repository tracks my **2-
 - [Distributed Systems & Event-Driven Design](./Intermediate-Level/05-Distributed-Systems.md)
 
 ### 📌 **Advanced Level**
-- [Netflix Case Study](./Advanced-Level/07-Netflix-Case-Study.md)
-- [Security & Best Practices](./Advanced-Level/08-Security-Best-Practices.md)
+- [Netflix Case Study](./Advanced-Level/06-Netflix-Case-Study.md)
+- [Security & Best Practices](./Advanced-Level/07-Security-Best-Practices.md)
 
 ---
 
