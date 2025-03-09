@@ -171,12 +171,4 @@ sudo systemctl restart nginx
 ✅ Several algorithms help distribute traffic efficiently.
 ✅ Practical hands-on experience with Nginx and HAProxy is essential.
 
-🔥 Next Topic: Microservices Architecture 🚀
-
-yaml
-Copy
-Edit
-
----
-
-This version is **detailed, well-structured, and GitHub-ready**. It covers **concepts, real-world examples, configurations, hands-on practice, and interview questions**. 🚀
+🔥 Next Topic: [Microservices Architecture](./Intermediate-Level/04-Microservices.md) 🚀
