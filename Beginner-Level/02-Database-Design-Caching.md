@@ -77,3 +77,32 @@ Eventual Consistency → "Will Sync Later" → If the internet is slow, messages
 🚀 When to Use What?
 ✔️ ACID → Use when data must always be correct & transactions must never fail (Bank, Insurance).
 ✔️ BASE → Use when speed & availability are more important than instant accuracy (WhatsApp, POS tracking).
+
+# 📌 Caching Strategies  
+
+## 🚀 Introduction  
+Caching helps **reduce latency, improve response times, and handle high traffic loads** by storing frequently accessed data in memory instead of fetching it from the database every time.  
+
+---
+
+## 🔥 Why Use Caching?  
+✅ Reduces **database load** by serving frequent queries from memory.  
+✅ Improves **performance** (lower latency).  
+✅ Enhances **scalability** to handle more users.  
+
+📌 **Example:**  
+Without caching → Every request hits the database → Slower response.  
+With caching → Frequently requested data is stored in memory → Faster response.  
+
+---
+
+## 🔥 Types of Caching  
+
+### 1️⃣ **Client-Side Caching**  
+- Stored **locally** in the user's browser (cookies, localStorage, sessionStorage).  
+- Used for static assets (CSS, JS, images).  
+
+📌 **Example:**  
+```js
+localStorage.setItem("username", "JohnDoe");
+console.log(localStorage.getItem("username")); // Output: JohnDoe
