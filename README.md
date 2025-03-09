@@ -27,7 +27,7 @@ Welcome to my **System Design Learning Journey!** This repository tracks my **2-
 
 ### 📌 **Beginner Level**
 - [System Design Fundamentals](./Beginner-Level/01-Fundamentals.md)
-- [Database Design & Caching](./Beginner-Level/02-Database-Design.md)
+- [Database Design & Caching](./Beginner-Level/02-Database-Design-Caching.md)
 - [Load Balancing](./Beginner-Level/03-Load-Balancing.md)
 
 ### 📌 **Intermediate Level**
