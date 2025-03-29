@@ -119,7 +119,8 @@ Use CDN (Cloudflare, AWS Shield) – Absorbs attack traffic.
 Monitor Logs & Traffic – Detects abnormal spikes.
 
 📌 Example: Cloudflare Rate Limiting Configuration
-```json{
+```json
+{
   "rule": "block",
   "requests_per_minute": 100,
   "action": "throttle"
