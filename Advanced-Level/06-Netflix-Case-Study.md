@@ -22,7 +22,7 @@ Netflix is one of the largest video streaming platforms, serving **millions of u
 
 📌 **Netflix follows a microservices-based architecture:**  
 
-```plaintext
+
 [User] → [API Gateway] → [Microservices Layer] → [Content Delivery Network (CDN)]
 ✅ Microservices Handle Different Tasks:
 1️⃣ User Service – Authentication, subscriptions.
