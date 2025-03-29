@@ -80,14 +80,14 @@ public class SecurityConfig {
 
 📌 Example: Rate Limiting with Spring Boot & Redis
 
-```java
-@RateLimiter(name = "default", fallbackMethod = "rateLimitFallback")
+```java@RateLimiter(name = "default", fallbackMethod = "rateLimitFallback")
 public ResponseEntity<String> apiRequest() {
     return ResponseEntity.ok("Request Processed");
 }
 public ResponseEntity<String> rateLimitFallback() {
     return ResponseEntity.status(429).body("Too many requests. Try later.");
-}```
+}
+```
 ✅ Limits API requests to prevent abuse.
 
 🔥 3. Secure Data Storage
