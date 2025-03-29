@@ -51,7 +51,7 @@ Welcome to my **System Design Learning Journey!** This repository tracks my **2-
 📌 **Mock Questions:**  
 - [Design Twitter](./Mock-Interviews/Twitter-System-Design.md)  
 - [Design WhatsApp](./Mock-Interviews/WhatsApp-Architecture.md)  
-- [Design YouTube](./Mock-Interviews/YouTube-System.md)  
+- [Design YouTube](./Mock-Interviews/YouTube-System-Design.md)  
 
 💡 **Common Interview Topics:**  
 ✅ Scaling Databases  
