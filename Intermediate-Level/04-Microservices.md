@@ -120,9 +120,6 @@ public class UserController {
 }
 📌 Step 3: Run the Service
 
-sh
-Copy
-Edit
 mvn spring-boot:run
 ```
 ✅ Your first microservice is running at http://localhost:8080/users/1 🚀
