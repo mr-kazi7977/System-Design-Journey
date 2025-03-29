@@ -31,6 +31,7 @@ Authentication verifies the user's identity. Common methods:
   "exp": 1712345678,
   "role": "admin"
 }
+```
 ✅ JWTs are signed and stored client-side, reducing database lookups.
 
 📌 Authorization (What can you access?)
