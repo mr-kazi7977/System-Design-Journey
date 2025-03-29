@@ -80,14 +80,14 @@ public class SecurityConfig {
 
 📌 Example: Rate Limiting with Spring Boot & Redis
 
-java
+```java
 @RateLimiter(name = "default", fallbackMethod = "rateLimitFallback")
 public ResponseEntity<String> apiRequest() {
     return ResponseEntity.ok("Request Processed");
 }
 public ResponseEntity<String> rateLimitFallback() {
     return ResponseEntity.status(429).body("Too many requests. Try later.");
-}
+}```
 ✅ Limits API requests to prevent abuse.
 
 🔥 3. Secure Data Storage
@@ -98,9 +98,10 @@ public ResponseEntity<String> rateLimitFallback() {
 
 📌 Example: Hashing Passwords with BCrypt in Java
 
-java
+```java
 BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 String hashedPassword = encoder.encode("mySecurePassword");
+```
 ✅ Even if stolen, hashed passwords cannot be reversed easily.
 
 🔥 4. Protecting Against DDoS Attacks
@@ -119,12 +120,12 @@ Monitor Logs & Traffic – Detects abnormal spikes.
 
 📌 Example: Cloudflare Rate Limiting Configuration
 
-json
+```json
 {
   "rule": "block",
   "requests_per_minute": 100,
   "action": "throttle"
-}
+}```
 ✅ Blocks IPs exceeding 100 requests per minute.
 
 🔥 5. Secure Cloud Infrastructure
@@ -140,12 +141,12 @@ Enable Logging & Monitoring – Detect unauthorized access.
 
 📌 Example: AWS IAM Role Policy
 
-json
+```json
 {
   "Effect": "Deny",
   "Action": "s3:DeleteBucket",
   "Resource": "arn:aws:s3:::my-secure-bucket"
-}
+}```
 ✅ Prevents accidental bucket deletion.
 
 🔥 6. Secure Logging & Monitoring
@@ -165,8 +166,9 @@ Use SIEM (Security Information & Event Management) – AI-powered monitoring.
 
 📌 Example: Masking Sensitive Logs in Java
 
-java
+```java
 log.info("User Login: [email protected], Password: ****");
+```
 ✅ Never log raw passwords or sensitive data.
 
 🔥 7. Security Best Practices Checklist
