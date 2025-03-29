@@ -84,8 +84,6 @@ Payment Service processes payment → Inventory Service updates stock →
 Notification Service sends an email to the user.
 
 markdown
-Copy
-Edit
 
 ✅ **Advantages of Event-Driven Architecture:**  
 - Decouples services → Microservices don’t depend on each other.  
@@ -116,8 +114,6 @@ public void createOrder(Order order) {
     kafkaTemplate.send("order-events", order.toString());
 }
 java
-Copy
-Edit
 // Consumer (Payment Service)
 @KafkaListener(topics = "order-events", groupId = "payment-service")
 public void processPayment(String orderEvent) {
@@ -143,20 +139,14 @@ public void processPayment(String orderEvent) {
 📌 Step 1: Start Kafka using Docker
 
 sh
-Copy
-Edit
 docker-compose up -d
 📌 Step 2: Publish an Event from Order Service
 
 java
-Copy
-Edit
 kafkaTemplate.send("orders", "New Order Placed: ID 12345");
 📌 Step 3: Consume the Event in Payment Service
 
 java
-Copy
-Edit
 @KafkaListener(topics = "orders", groupId = "payments")
 public void processOrder(String order) {
     System.out.println("Processing payment for order: " + order);
