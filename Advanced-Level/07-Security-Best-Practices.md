@@ -49,7 +49,7 @@ Access is granted based on user attributes (location, device, etc.).
 
 📌 Example: RBAC Policy in Spring Security
 
-java
+```java
 @Configuration
 public class SecurityConfig {
     @Bean
@@ -62,6 +62,7 @@ public class SecurityConfig {
         return http.build();
     }
 }
+```
 ✅ Only Admins can access /admin/** routes.
 
 🔥 2. API Security Best Practices
