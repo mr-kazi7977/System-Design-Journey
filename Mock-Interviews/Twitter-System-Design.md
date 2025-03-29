@@ -36,33 +36,30 @@ We can use eventual consistency for scalability.
 
 🔹 Step 3: Database Schema Design
 📌 Users Table (SQL)
-sql
-Copy
-Edit
+```sql
 CREATE TABLE users (
     user_id BIGINT PRIMARY KEY,
     username VARCHAR(255) UNIQUE,
     created_at TIMESTAMP
 );
+```
 📌 Tweets Table (NoSQL - Cassandra)
-json
-Copy
-Edit
+```json
 {
     "tweet_id": "12345",
     "user_id": "789",
     "content": "Hello Twitter!",
     "timestamp": "2025-03-29T12:00:00Z"
 }
+```
 📌 Follower Table (SQL - Many-to-Many)
-sql
-Copy
-Edit
+```sql
 CREATE TABLE followers (
     follower_id BIGINT,
     followee_id BIGINT,
     PRIMARY KEY (follower_id, followee_id)
 );
+```
 🔹 Step 4: Handling High Traffic & Scalability
 ✅ Caching Popular Tweets → Store in Redis
 ✅ Sharding Strategy → Shard tweets by user_id % N
@@ -76,19 +73,17 @@ CREATE TABLE followers (
 
 🔹 Step 6: API Design
 🚀 Post a Tweet API
-http
-Copy
-Edit
+```http
 POST /tweets
 {
     "user_id": "123",
     "content": "Hello World!"
 }
+```
 🚀 Get User Feed API
-http
-Copy
-Edit
+```http
 GET /feed?user_id=123
+```
 🔹 Step 7: Interview Questions & Challenges
 ✅ How do you handle trending tweets efficiently?
 ✅ What happens if a tweet goes viral?
