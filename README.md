@@ -69,7 +69,7 @@ Welcome to my **System Design Learning Journey!** This repository tracks my **2-
 ---
 
 ## 🌍 Community & Discussion  
-💬 Join me on **LinkedIn/Twitter** to discuss system design concepts! 🚀  
+💬 Join me on **[LinkedIn](https://www.linkedin.com/in/shahrukh-kazi-60761b206/)** to discuss system design concepts! 🚀  
 📌 Feel free to contribute, ask questions, or suggest improvements.  
 
 ---
