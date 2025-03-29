@@ -161,6 +161,7 @@ Edit
 public void processOrder(String order) {
     System.out.println("Processing payment for order: " + order);
 }
+```
 ✅ Your microservices are now decoupled and event-driven! 🚀
 
 🔥 Distributed Systems Interview Questions
