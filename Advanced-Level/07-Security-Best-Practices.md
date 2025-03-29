@@ -119,13 +119,12 @@ Use CDN (Cloudflare, AWS Shield) – Absorbs attack traffic.
 Monitor Logs & Traffic – Detects abnormal spikes.
 
 📌 Example: Cloudflare Rate Limiting Configuration
-
-```json
-{
+```json{
   "rule": "block",
   "requests_per_minute": 100,
   "action": "throttle"
 }```
+
 ✅ Blocks IPs exceeding 100 requests per minute.
 
 🔥 5. Secure Cloud Infrastructure
@@ -141,12 +140,12 @@ Enable Logging & Monitoring – Detect unauthorized access.
 
 📌 Example: AWS IAM Role Policy
 
-```json
-{
+```json{
   "Effect": "Deny",
   "Action": "s3:DeleteBucket",
   "Resource": "arn:aws:s3:::my-secure-bucket"
 }```
+
 ✅ Prevents accidental bucket deletion.
 
 🔥 6. Secure Logging & Monitoring
