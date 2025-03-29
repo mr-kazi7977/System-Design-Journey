@@ -124,7 +124,7 @@ sh
 Copy
 Edit
 mvn spring-boot:run
-```sh
+```
 ✅ Your first microservice is running at http://localhost:8080/users/1 🚀
 
 🔥 Microservices Interview Questions
