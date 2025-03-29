@@ -73,6 +73,7 @@ Edit
   "created_at": "2025-03-29T12:00:00Z",
   "expires_at": "2025-04-29T12:00:00Z"
 }
+```
 🔥 URL Shortening Algorithm
 ✅ How do we generate a short URL?
 
@@ -86,9 +87,7 @@ Convert a unique ID (auto-increment or UUID) into a Base62 string (A-Z, a-z, 0-9
 
 📌 Java Implementation:
 
-java
-Copy
-Edit
+```java
 public class Base62Encoder {
     private static final String CHARSET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     public static String encode(long num) {
@@ -100,6 +99,7 @@ public class Base62Encoder {
         return sb.reverse().toString();
     }
 }
+```
 🔥 Caching with Redis
 ✅ Why use caching?
 
@@ -115,19 +115,16 @@ Set TTL (time-to-live) to expire old URLs.
 
 📌 Example: Caching with Redis (Spring Boot)
 
-java
-Copy
-Edit
+```java
 @Cacheable(value = "urls", key = "#shortUrl")
 public String getLongUrl(String shortUrl) {
     return urlRepository.findByShortUrl(shortUrl);
 }
+```
 🔥 API Endpoints
 📌 1️⃣ Shorten URL API
 
-http
-Copy
-Edit
+```http
 POST /shorten
 {
   "long_url": "https://www.example.com/some-long-url"
@@ -136,24 +133,23 @@ Response:
 {
   "short_url": "https://short.ly/xyz123"
 }
+```
 📌 2️⃣ Redirect API
 
-http
-Copy
-Edit
+```http
 GET /xyz123
 Response: 302 Redirect → "https://www.example.com/some-long-url"
+```
 📌 3️⃣ Analytics API (Optional)
 
-http
-Copy
-Edit
+```http
 GET /analytics/xyz123
 Response:
 {
   "clicks": 1052,
   "last_accessed": "2025-03-28T10:00:00Z"
 }
+```
 🔥 Scaling the System
 ✅ Horizontal Scaling
 
@@ -188,13 +184,12 @@ Example: Allow 100 requests per minute per IP.
 
 📌 Rate Limiting with Spring Boot & Redis
 
-java
-Copy
-Edit
+```java
 @RateLimiter(name = "shortenRateLimit", fallbackMethod = "rateLimitExceeded")
 public ResponseEntity<String> shortenUrl(@RequestBody UrlRequest request) {
     return ResponseEntity.ok(urlService.shorten(request.getLongUrl()));
 }
+```
 🔥 Deployment & Monitoring
 ✅ Deploy on AWS/GCP
 
