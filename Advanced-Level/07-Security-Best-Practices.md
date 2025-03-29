@@ -50,8 +50,6 @@ Access is granted based on user attributes (location, device, etc.).
 📌 Example: RBAC Policy in Spring Security
 
 java
-Copy
-Edit
 @Configuration
 public class SecurityConfig {
     @Bean
@@ -82,8 +80,6 @@ public class SecurityConfig {
 📌 Example: Rate Limiting with Spring Boot & Redis
 
 java
-Copy
-Edit
 @RateLimiter(name = "default", fallbackMethod = "rateLimitFallback")
 public ResponseEntity<String> apiRequest() {
     return ResponseEntity.ok("Request Processed");
@@ -102,8 +98,6 @@ public ResponseEntity<String> rateLimitFallback() {
 📌 Example: Hashing Passwords with BCrypt in Java
 
 java
-Copy
-Edit
 BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 String hashedPassword = encoder.encode("mySecurePassword");
 ✅ Even if stolen, hashed passwords cannot be reversed easily.
@@ -125,8 +119,6 @@ Monitor Logs & Traffic – Detects abnormal spikes.
 📌 Example: Cloudflare Rate Limiting Configuration
 
 json
-Copy
-Edit
 {
   "rule": "block",
   "requests_per_minute": 100,
@@ -148,8 +140,6 @@ Enable Logging & Monitoring – Detect unauthorized access.
 📌 Example: AWS IAM Role Policy
 
 json
-Copy
-Edit
 {
   "Effect": "Deny",
   "Action": "s3:DeleteBucket",
@@ -175,8 +165,6 @@ Use SIEM (Security Information & Event Management) – AI-powered monitoring.
 📌 Example: Masking Sensitive Logs in Java
 
 java
-Copy
-Edit
 log.info("User Login: [email protected], Password: ****");
 ✅ Never log raw passwords or sensitive data.
 
